@@ -1,0 +1,23 @@
+{
+  "name": "Lead",
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "empresa": {
+      "type": "string"
+    },
+    "cargo": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "mensaje": {
+      "type": "string"
+    },

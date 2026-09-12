@@ -1,0 +1,69 @@
+const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
+
+<!doctype html>
+<html lang="es-CL">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://db.com/logo_v2.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="description" content="INNOVAN — consultora boutique de innovación aplicada para empresas medianas en Chile. Implementamos proyectos de innovación con ROI de al menos 20% en 3 a 6 meses, en 3 módulos, con un equipo de 5 consultores. Tu equipo ejecuta, nosotros instalamos la capacidad." />
+    <meta name="keywords" content="consultora de innovación, innovación aplicada, gestión de innovación, empresas medianas Chile, innovación corporativa, ROI innovación, sistema de innovación, consultoría innovación Santiago, innovación para PYMES, cómo medir ROI de innovación, cuánto cuesta un proyecto de innovación" />
+    <meta name="author" content="INNOVAN" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#E8590C" />
+    <link rel="canonical" href="https://innovan.db.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="INNOVAN — Consultora de innovación aplicada para empresas medianas en Chile" />
+    <meta property="og:description" content="Implementamos proyectos de innovación con ROI de al menos 20% en 3 a 6 meses. Tu equipo ejecuta, nosotros instalamos la capacidad." />
+    <meta property="og:url" content="https://innovan.db.app/" />
+    <meta property="og:site_name" content="INNOVAN" />
+    <meta property="og:locale" content="es_CL" />
+    <meta property="og:image" content="https://media.db.com/images/public/6a8c5ff187edbe58168c74fa/34e9261f8_LOGOINNOVANbaja.png" />
+    <meta property="og:image:alt" content="Logo de INNOVAN, consultora de innovación aplicada" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="INNOVAN — Innovación aplicada para empresas medianas en Chile" />
+    <meta name="twitter:description" content="Proyectos de innovación con ROI de al menos 20% en 3 a 6 meses. Tu equipo ejecuta, nosotros instalamos la capacidad." />
+    <meta name="twitter:image" content="https://media.db.com/images/public/6a8c5ff187edbe58168c74fa/34e9261f8_LOGOINNOVANbaja.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <title>INNOVAN — Consultora de innovación aplicada para empresas medianas | Chile</title>
+
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "INNOVAN",
+      "alternateName": "INNOVAN SpA",
+      "url": "https://innovan.db.app",
+      "logo": "https://media.db.com/images/public/6a8c5ff187edbe58168c74fa/34e9261f8_LOGOINNOVANbaja.png",
+      "description": "Consultora boutique de innovación aplicada para empresas medianas en Chile. Implementamos proyectos de innovación con ROI de al menos 20% en 3 a 6 meses.",
+      "email": "contacto@innovan.cl",
+      "telephone": "+56988286227",
+      "foundingDate": "2025",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Santiago",
+        "addressRegion": "Región Metropolitana",
+        "addressCountry": "CL"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/innovan"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
